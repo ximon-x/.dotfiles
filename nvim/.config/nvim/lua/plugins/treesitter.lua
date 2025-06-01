@@ -1,0 +1,31 @@
+return {
+    "nvim-treesitter/nvim-treesitter",
+    branch = "master",
+    lazy = false,
+    build = ":TSUpdate",
+
+    opts = {
+        highlight = { enable = true },
+        indent = { enable = true },
+        ensure_installed = {
+            "bash",
+            "c",
+            "cpp",
+            "diff",
+            "go",
+            "html",
+            "javascript",
+            "json",
+            "lua",
+            "luadoc",
+            "markdown",
+            "markdown_inline",
+            "python",
+            "rust",
+            "solidity",
+            "toml",
+            "typescript",
+        },
+        auto_install = true,
+    },
+}

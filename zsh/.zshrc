@@ -47,11 +47,11 @@ alias cat="batcat"
 
 alias zshconfig="cd ~/.dotfiles/zsh/ && nvim .zshrc"
 alias tmuxconfig="cd ~/.dotfiles/tmux/ && nvim .tmux.conf"
-alias nvimconfig="cd ~/.dotfiles/nvim/.config/nvim/ && nvim ."
+alias nvimconfig="cd ~/.dotfiles/nvim/.config/nvim/ && neovim . --fork"
 alias emacsconfig="cd ~/.dotfiles/emacs/.config/emacs/ && emacsclient -cnqu -a 'emacs' ." 
 
 alias dotfiles="code ~/.dotfiles"
-alias playground="cd ~/Projects/Playground/ && neovide . --fork"
+alias playground="cd ~/Projects/Playground/ && neovim . --fork"
 alias study="cd ~/Notes/Study/ && emacsclient -cnqu -a 'emacs' ."
 alias learn="playground && study && exit"
 
